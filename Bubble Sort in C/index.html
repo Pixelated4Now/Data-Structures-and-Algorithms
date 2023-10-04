@@ -1,0 +1,11 @@
+Bubble sort algorithm in C.
+The function takes the array to be searched and the upperbound of the array (the highest value the index can take) as parameters.
+It uses two loops - an outer count-controlled loop and an inner post-conditional loop.
+The swap variable is used as a flag. This is initialized to FALSE (0 being the binary equivalent) at the begnning of every pass of the outer loop.
+The inner loop is used to compare adjacent elements of the array against each other.
+If the preceding element is greater than its succesor, then the two values are swapped.
+An extra variable, temp, is used as a temporary storage area during the swap.
+When a swap occurrs, the value of swap is set to TRUE (1, in binary terms).
+The value of boundary is decremented at the end of each pass of the inner loop since, with each pass, the last elements are sorted automatically, and do not need to be checked. 
+The process continues until the value of swap is FALSE - this means that no swaps have occured in a single pass of the inner loop.
+Hence, the array is sorted.
